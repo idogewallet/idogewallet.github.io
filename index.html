@@ -30,6 +30,14 @@
     color: green;
     font-weight: bold;
   }
+  fieldset {
+    background-color: #71C24C;
+    color: #FFFFFF;
+    width: 16%;
+    -moz-border-radius:3px;  
+    border-radius: 3px;  
+    -webkit-border-radius: 3px;
+  }
   </style>
 <meta name="description" content="Another Dogecoin Wallet for iOS, with new features!" />
 
@@ -48,9 +56,18 @@
 <link rel='icon' href='/favicon.ico'>
 </head>
 <body>
+<script>
+$(document).ready(function(){
+    $("span.download").click(function(){
+        window.location.href = "https://";
+    });
+});
+</script>
 <h1 align="center" class="title">iDoge wallet!</h1>
 <p>iDoge Wallet!</p>
-<img alt="Get it on the App Store" src="https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" height="65" width="186">
+<fieldset>
+<span class="download"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Download Now</span>
+</fieldset>
 <div class="footer"><br><br>Please Donate Dogecoins to support development of iDoge!<br>Address: 
 <gabc class="bits">DAwG</gabc>E2QYtXksCNHzGwjEdpStNPjML8jEzE<br><br>&nbsp;</div>
 </body>
